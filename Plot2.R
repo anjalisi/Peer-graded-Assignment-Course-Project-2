@@ -1,3 +1,7 @@
+
+#Reading the CSV Data
+NEI <- readRDS("summarySCC_PM25.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
 # Subset NEI data by Baltimore's fip.
 baltimoreNEI <- NEI[NEI$fips=="24510",]
 
